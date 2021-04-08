@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+  /* font-family: "Arial", "Helvetica", sans-serif; если у юзера еть шрифт ариал, то он подгрузится6 если его нет, то не подгрузится Helvetica */
+
+  font-family: 'Mulish', sans-serif;
+  font-size:16px;
+  font-weight: 400;
+}
+
+.header{
+  display: flex;
+  align-items: center; /*выранвие флек сэлеов  вдоль поперчной оси*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 70px;
+  margin-bottom: 30px;
+  position: fixed; /*шапка закреплена*/
+  top: 0; /*к верхнему лесову углу*/
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.menu-button{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 17px;
+  margin-right: 28px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.menu-line{ /*линия бургера*/
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #1F2022;
+  border-radius: 20px;
+}
+
+.logo{
+  margin-right: 59px;
+}
+
+
+.input-group{
+  max-width: 830px;
+  width: 50%; /*от родителяч*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 23px;
+  background-color:  rgba(235, 235, 235, 1);
+  border-radius:  22px;
+}
+
+.input-search{ /*поле поискка*/
+  background-color: transparent;
+  border: none;
+  padding: 12px 23px;
+  width: 100%;
+}
+
+.button-search{ /*кнпока поиска*/ 
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-search{
+  fill: #000;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  margin-left: auto; /*блок прижмется к правому краю */  
+}
+
+.icons-link{ /*a */
+  text-decoration: none;
+  opacity: 0.24;
+}
+  
+.icons-link:hover{ /*при наведении */
+  opacity: 0.38; 
+}
+
+.icon-video{
+  opacity: 0.24;
+}
+
+.icon-video:hover{
+  opacity: 0.38;
+}
+
+.icons-link:not(:last-child){ /*все кроме послденего*/
+  margin-right: 50px;
+}
+
+.user{
+  margin-left: 50px;
+}
+
+.sidebar{
+  width: 13%;
+  padding-left: 32px;
+  position: fixed; /*фиксируем бокоовое меню*/
+  left: 0;
+  top: 114px; /*меню от верха отодвигаем на 114*/
+  height: calc(100% - 114px); 
+  overflow-y: auto; /*появится вертика скролл если контент не умещается*/
+  background-color: #fff; /*иначе .content удет на него наезжать*/
+  
+}
+
+
+.nav-menu{ /*ul*/
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+.nav-item{ /*li*/
+  margin-bottom: 28px;
+  
+  
+
+}
+
+.nav-link{ /*a*/
+  display: flex;
+  align-items:center;  
+  text-decoration: none;
+  color: #898989; 
+}
+
+.nav-item .icon{ /*svg*/
+  fill: #898989;
+}
+
+
+.nav-link:hover{ /*a*/
+  color: rgba(255, 0, 0, 1);
+
+  
+}
+
+
+.nav-link:hover .icon{ /*svg*/
+  fill: rgba(255, 0, 0, 1);
+}
+
+.nav-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+
+
+color: #000000;
+}
+
+.nav-text{
+  margin-left: 20px;
+}
+
+.nav-img{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.content{
+  width: 100%; /*от родителя, то еть арвен шиирине родителя*/
+  margin-top: 85px;
+}

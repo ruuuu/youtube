@@ -84,12 +84,18 @@ body {
 
 .button-search {
   /*кнпока поиска*/
+
   padding: 0;
   width: 19px;
   height: 19px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+
+.mobile-search .button-search {
+  display: none;
 }
 
 .icon-search {
@@ -114,13 +120,7 @@ body {
   opacity: 0.38;
 }
 
-.icon-video {
-  opacity: 0.24;
-}
 
-.icon-video:hover {
-  opacity: 0.38;
-}
 
 .icons-link:not(:last-child) {
   /*все кроме послденего*/
@@ -161,9 +161,6 @@ body {
 .nav-item {
   /*li*/
   margin-bottom: 28px;
-
-
-
 }
 
 .nav-link {
@@ -183,12 +180,11 @@ body {
 .nav-link:hover {
   /*a*/
   color: rgba(255, 0, 0, 1);
-
-
 }
 
 
 .nav-link:hover .icon {
+  /*принаведении на иконку*/
   /*svg*/
   fill: rgba(255, 0, 0, 1);
 }
@@ -237,7 +233,6 @@ body {
   font-size: 26px;
   line-height: 33px;
   font-weight: 700;
-
 }
 
 .channel-avatar {
@@ -355,6 +350,10 @@ body {
   display: none;
 }
 
+
+
+
+
 @media(max-width: 860px) {
   /*< 860*/
 
@@ -363,9 +362,9 @@ body {
   }
 
   .user {
-    margin-left: auto;
-    /*чтобы иконка прилипала к правому краю*/
 
+    /*чтобы иконка прилипала к правому краю*/
+    margin-left: 20px;
   }
 
   /* .mobile-search {
@@ -375,6 +374,14 @@ body {
 
 }
 
+
+@media(max-width: 720px) {
+
+  /*< 720*/
+  .channel-text {
+    max-width: 200px;
+  }
+}
 
 @media(max-width: 640px) {
 
@@ -404,9 +411,13 @@ body {
     /*прижмется  кправому краю*/
   }
 
+  .mobile-search .button-search {
+    display: block;
+  }
+
 
   .user {
-    margin-left: 20px;
+    /* margin-left: auto; */
     /*чтобы иконка прилипала к правому краю*/
   }
 
@@ -486,11 +497,5 @@ body {
     /* identical to box height */
     color: #898989;
   }
-
-
-
-
-
-
 
 }

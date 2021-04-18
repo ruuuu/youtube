@@ -1,8 +1,8 @@
-const swiperChannel = new Swiper('.channel-slider', {
+const swiperChannel = new Swiper('.channel-slider', { //первый слайдер
   // Optional parameters
   
   loop: true,
-  slidesPerView: 1, //склько слайдев видно сразу
+  slidesPerView: 1, //сколько слайдев видно сразу
   spaceBetween: 20, //расстояние между слайдами
 
   breakpoints: {
@@ -53,20 +53,20 @@ const swiperChannel = new Swiper('.channel-slider', {
 });
 
 
-const recommendedSwiper = new Swiper('.recommended-slider', {
+const recommendedSwiper = new Swiper('.recommended-slider', { // втрой слайдер
   // Optional parameters
   
   loop: true,
-  slidesPerView: 1, //склько слайдев видно сразу
+  slidesPerView: 1, //сколько слайдев видно сразу
   spaceBetween: 3, //расстояние между слайдами
 
   breakpoints: {
     1600: { // >= 1600px
-      slidesPerView: 3,
+      slidesPerView: 3, //сколько слайдев видно сразу
       
     },
     1100: { // >= 1100px
-      slidesPerView: 2,
+      slidesPerView: 2, //сколько слайдев видно сразу
       
     },
   
@@ -78,16 +78,15 @@ const recommendedSwiper = new Swiper('.recommended-slider', {
     prevEl: '.recommended-button-prev',
   },
 
-  
 });
 
 
 
-const recommendedChannelSlider = new Swiper('.recommended-channel-slider', {
+const recommendedChannelSlider = new Swiper('.recommended-channel-slider', { //третий слайдер
   // Optional parameters
   
   loop: true,
-  slidesPerView: 1, //склько слайдев видно сразу
+  slidesPerView: 1, //сколько слайдев видно сразу
   spaceBetween: 3, //расстояние между слайдами
 
   breakpoints: {
@@ -104,18 +103,30 @@ const recommendedChannelSlider = new Swiper('.recommended-channel-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.channel-button-next',
-    prevEl: '.channel-button-prev',
+    nextEl: '.recommended-channel-button-next',
+    prevEl: '.recommended-channel-button-prev',
   },
 
-  
+});
+
+const searchBtn = document.querySelector('.mobile-search');
+const mobileSearch = document.querySelector('.input-group');
+const user = document.querySelector('.user');
+
+searchBtn.addEventListener('click', () => { //обработчик наажтия на кнпоку Поиска(лупа)
+  mobileSearch.classList.toggle('is-open');
+  searchBtn.style.display= 'none'; // display:none;
+  user.style.marginLeft = 'auto';  // margin-left: auto
 });
 
 
 
-if(document.documentElement.scrollWidth <= 640){
+
+
+if(document.documentElement.scrollWidth <= 640){ // если ширина меньше чем 640
     swiperChannel.destroy(); /*отключаем слайдер*/
     recommendedSwiper.destroy(); 
     recommendedChannelSlider.destroy();
+
 
 }

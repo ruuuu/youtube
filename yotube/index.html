@@ -118,28 +118,17 @@
   </div>
 
   <div class="container">
-
     <div class="sidebar">
       <!--боковое меню-->
       <nav class="nav">
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="" class="nav-link">
-              <svg class="icon icon-library" width="20" height="19">
-                <use xlink:href="img/icons.svg#library"></use>
-                <!--id=library-->
+              <svg class="icon icon-homme" width="20" height="19">
+                <use xlink:href="img/icons.svg#homme"></use>
+                <!--id=homme-->
               </svg>
               <span class="nav-text">Home</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <svg class="icon icon-trending" width="20" height="19">
-                <use xlink:href="img/icons.svg#trending"></use>
-                <!--id=trending-->
-              </svg>
-              <span class="nav-text">Trending</span>
             </a>
           </li>
 
@@ -150,6 +139,16 @@
                 <!--id=subscription-->
               </svg>
               <span class="nav-text">Subscription</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <svg class="icon icon-trennding" width="20" height="19">
+                <use xlink:href="img/icons.svg#trennding"></use>
+                <!--id=trennding-->
+              </svg>
+              <span class="nav-text">Trending</span>
             </a>
           </li>
         </ul>
@@ -180,49 +179,59 @@
             <a href="" class="nav-link">
               <svg class="icon icon-trending" width="20" height="19">
                 <use xlink:href="img/icons.svg#trending"></use>
-                <!--id=watch-->
+                <!--id=trending-->
               </svg>
-              <span class="nav-text">watch</span>
+              <span class="nav-text">Watch later</span>
             </a>
           </li>
 
           <li class="nav-item">
             <a href="" class="nav-link">
-              <svg class="icon icon-trending" width="20" height="19">
-                <use xlink:href="img/icons.svg#trending"></use>
-                <!--id=watch-->
+              <svg class="icon icon-favourites" width="20" height="19">
+                <use xlink:href="img/icons.svg#favourites"></use>
+                <!--id=favourites-->
               </svg>
-              <span class="nav-text">watch</span>
+              <span class="nav-text">Favourites</span>
             </a>
           </li>
 
           <li class="nav-item">
             <a href="" class="nav-link">
-              <svg class="icon icon-trending" width="20" height="19">
-                <use xlink:href="img/icons.svg#trending"></use>
-                <!--id=watch-->
+              <svg class="icon icon-liked_videos" width="20" height="19">
+                <use xlink:href="img/icons.svg#liked_videos"></use>
+                <!--id=liked_videos-->
               </svg>
-              <span class="nav-text">watch</span>
+              <span class="nav-text">Liked videos</span>
             </a>
           </li>
 
           <li class="nav-item">
             <a href="" class="nav-link">
-              <svg class="icon icon-trending" width="20" height="19">
-                <use xlink:href="img/icons.svg#trending"></use>
-                <!--id=watch-->
+              <svg class="icon icon-music" width="20" height="19">
+                <use xlink:href="img/icons.svg#music"></use>
+                <!--id=music-->
               </svg>
-              <span class="nav-text">watch</span>
+              <span class="nav-text">Music</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <svg class="icon icon-games" width="20" height="19">
+                <use xlink:href="img/icons.svg#games"></use>
+                <!--id=games-->
+              </svg>
+              <span class="nav-text">Games</span>
             </a>
           </li>
 
           <li class="nav-item">
             <a href="" class="nav-link">
               <svg class="icon icon-showmore" width="20" height="19">
-                <use xlink:href="img/icons.svg#setings"></use>
+                <use xlink:href="img/icons.svg#chevron-down"></use>
                 <!--id=showmore-->
               </svg>
-              <span class="nav-text">show more</span>
+              <span class="nav-text">Show more</span>
             </a>
           </li>
         </ul>
@@ -271,9 +280,9 @@
       <ul class="nav-menu">
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <svg class="icon icon-music" width="20" height="19">
-              <use xlink:href="img/icons.svg#music"></use>
-              <!--id=watch-->
+            <svg class="icon icon-settings" width="20" height="19">
+              <use xlink:href="img/icons.svg#settings"></use>
+              <!--id=settings-->
             </svg>
             <span class="nav-text">Settings</span>
           </a>
@@ -412,9 +421,10 @@
             </div>
           </div>
 
-
         </div>
       </div>
+      <!--.channel-->
+
       <div class="channel">
         <a href="" class="channel-title">
           <img src="img/avatar.svg" class="channel-avatar" alt="avatar">
@@ -423,13 +433,13 @@
 
         <!-- If we need navigation buttons -->
         <div class="slider-buttons">
-          <div class="channel-button channel-button-prev">
+          <div class="channel-button recommended-button-prev">
             <svg class="icon icon-left" width="28" height="28">
               <use xlink:href="img/icons.svg#Left"></use>
               <!--id=Left-->
             </svg>
           </div>
-          <div class="channel-button channel-button-next">
+          <div class="channel-button recommended-button-next">
             <svg class="icon icon-right" width="28" height="28">
               <use xlink:href="img/icons.svg#Right"></use>
               <!--id=Right-->
@@ -438,7 +448,7 @@
         </div>
 
         <!--скопировалf со свайпера:-->
-        <div class="swiper-container channel-slider">
+        <div class="swiper-container recommended-slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -544,144 +554,142 @@
               </div>
             </div>
           </div>
-
-          <div class="channel">
-            <a href="" class="channel-title">
-              <img src="img/avatar.svg" class="channel-avatar" alt="avatar">
-              <span class="channel-text">Rufina Davletova</span>
-            </a>
-
-            <!-- If we need navigation buttons -->
-            <div class="slider-buttons">
-              <div class="channel-button channel-button-prev">
-                <svg class="icon icon-left" width="28" height="28">
-                  <use xlink:href="img/icons.svg#Left"></use>
-                  <!--id=Left-->
-                </svg>
-              </div>
-              <div class="channel-button channel-button-next">
-                <svg class="icon icon-right" width="28" height="28">
-                  <use xlink:href="img/icons.svg#Right"></use>
-                  <!--id=Right-->
-                </svg>
-              </div>
-            </div>
-
-            <!--скопировалf со свайпера:-->
-            <div class="swiper-container channel-slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" class="thumbnail" width="250" height="150" alt="video">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="video-card">
-                    <div class="video-thumb">
-                      <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
-                      <span class="video-duration">4:15</span>
-                    </div>
-                    <h3 class="video-title">A Brief History Of Creation</h3>
-                    <div class="video-info">
-                      <span class="video-counter">
-                        <span class="video-views">80k views</span>
-                        <span class="video-date">3 days ago</span>
-                      </span>
-                      <span class="video-channel">Rufina Davletova</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-
         </div>
       </div>
-    </main>
+
+      <div class="channel">
+        <a href="" class="channel-title">
+          <img src="img/avatar.svg" class="channel-avatar" alt="avatar">
+          <span class="channel-text">Rufina Davletova</span>
+        </a>
+
+        <!-- If we need navigation buttons -->
+        <div class="slider-buttons">
+          <div class="channel-button recommended-channel-button-prev">
+            <svg class="icon icon-left" width="28" height="28">
+              <use xlink:href="img/icons.svg#Left"></use>
+              <!--id=Left-->
+            </svg>
+          </div>
+          <div class="channel-button recommended-channel-button-next">
+            <svg class="icon icon-right" width="28" height="28">
+              <use xlink:href="img/icons.svg#Right"></use>
+              <!--id=Right-->
+            </svg>
+          </div>
+        </div>
+
+        <!--скопировалf со свайпера:-->
+        <div class="swiper-container recommended-channel-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" class="thumbnail" width="250" height="150" alt="video">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img src="img/cover-video.png" width="250" height="150" alt="video" class="thumbnail">
+                  <span class="video-duration">4:15</span>
+                </div>
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="video-info">
+                  <span class="video-counter">
+                    <span class="video-views">80k views</span>
+                    <span class="video-date">3 days ago</span>
+                  </span>
+                  <span class="video-channel">Rufina Davletova</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
   </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
